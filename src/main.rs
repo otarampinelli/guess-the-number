@@ -2,12 +2,12 @@ use std::io;
 
 fn main() {
     // ! === macro
-    println!("Advinhe o número!");
-    println!("Digite o seu palpite.");
+    println!("Guess the Number!");
+    println!("Write your tip!.");
 
     let mut palpite = String::new();
 
-    io::stdin().read_line(&mut palpite).expect("Falha ao ler entrada");
+    io::stdin().read_line(&mut palpite).expect("Failed to read input!");
 
-    println!("Voce dise: {}", palpite);
+    println!("You said: {}", palpite);
 }
